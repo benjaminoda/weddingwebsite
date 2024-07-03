@@ -105,6 +105,7 @@ nav ul li.logo a img:hover {
         height: 100vh;
         justify-content: center;
         align-items: center;
+        line-height: 5rem;
         z-index: 1001;
         opacity: 0;
         visibility: hidden;
