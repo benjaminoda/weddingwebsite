@@ -1,0 +1,92 @@
+nav ul li a {
+
+    color: #000;
+}
+
+/* Hero section styles */
+.hero-travel {
+    background: #ede8e8;
+    padding: 2em 0; /* Adjust this value to create space between the header and the travel info section */
+}
+
+
+/* Travel Information section styles */
+.travel-info-section {
+    padding: 2em 1em;
+    background: #ede8e8;
+}
+
+.travel-info-section h1 {
+    font-family: 'Adobe Garamond Pro', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
+.travel-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.map-column {
+    flex: 1 1 50%;
+    margin-right: 2em;
+}
+
+.info-column {
+    flex: 1 1 50%;
+    text-align: left;
+}
+
+.info-column h2 {
+    font-family: 'Adobe Garamond Pro', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
+.info-column p,
+.info-column ul {
+    font-family: 'Abel', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+
+.info-column ul {
+    padding-left: 1.5em;
+}
+
+.info-column ul li {
+    margin-bottom: 1em;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 750px) {
+    .travel-info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-column,
+    .info-column {
+        flex: 1 1 100%;
+        margin-right: 0;
+        max-width: 90%; /* Adjust this value to provide space around the columns */
+    }
+
+    .map-column iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    .info-column h2 {
+        font-size: 1.5rem; /* Adjust font size for mobile */
+    }
+
+    .info-column p,
+    .info-column ul {
+        font-size: 1rem; /* Adjust font size for mobile */
+    }
+}

@@ -1,0 +1,79 @@
+/* Homepage hero section styles */
+.hero {
+    position: relative;
+    background: url('https://lh3.googleusercontent.com/d/1plHMHIsGhU3va50VbIGBjN2BWuk7AuaT') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25); /* Adjust opacity here */
+    z-index: 1; /* Ensure the overlay is above background but not hero content */;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-logo {
+    max-width: 300px;
+    height: auto;
+}
+
+.date-location {
+    font-size: 1.5rem; /* Paragraph 1 size */
+    font-family: 'Abel', sans-serif;
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: 0.01em;
+    margin: 0.2em 0;
+    color: #fff;
+}
+
+/* Heading styles */
+h1, h2, h3, h4 {
+    font-family: 'Adobe Garamond Pro', serif;
+    font-weight: 400;
+    line-height: 1.4em;
+    letter-spacing: 0em;
+    text-transform: none;
+}
+
+h1 {
+    font-size: 4rem; /* Heading 1 size */
+}
+
+h2 {
+    font-size: 2.8rem; /* Heading 2 size */
+}
+
+h3 {
+    font-size: 2.2rem; /* Heading 3 size */
+}
+
+h4 {
+    font-size: 1.6rem; /* Heading 4 size */
+}
+
+@media (max-width: 750px) {
+    .hero {
+        position: relative;
+        background: url('https://lh3.googleusercontent.com/d/1cCgttmiMu-Y79276wbwhLh4WBJeO7Yz2') no-repeat center center;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}

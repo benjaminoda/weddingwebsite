@@ -1,0 +1,88 @@
+
+
+nav ul li a {
+
+    color: #000;
+}
+
+/* Hero section styles */
+.hero-wedding-party {
+    background: #ede8e8;
+    padding: 2em 0;
+}
+
+/* Wedding Party section styles */
+.wedding-party-section {
+    padding: 2em 1em;
+    background: #ede8e8;
+}
+
+.wedding-party-section h1 {
+    font-family: 'Adobe Garamond Pro', serif;
+    font-size: 2rem;
+    font-weight: 40;
+    margin-bottom: 1em;
+}
+
+.wedding-party-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.party-member {
+    flex: 1 1 auto;
+    margin: 1em;
+    text-align: left;
+    max-width: calc(33.333% - 2em); /* Three images per row */
+}
+
+.party-member img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4; /* Adjust this to match your desired aspect ratio */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.party-member h2 {
+    font-family: 'Adobe Garamond Pro', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0.5em 0 0.2em;
+}
+
+.party-member p {
+    font-family: 'Abel', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 750px) {
+    .wedding-party-section .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .party-member {
+        flex: 1 1 100%;
+        margin: 1em 0;
+        max-width: 90%; /* Adjust this value to provide space around the images */
+    }
+
+    .party-member img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: auto; /* Maintain aspect ratio */
+    }
+
+    .party-member h2 {
+        font-size: 1.2rem; /* Adjust font size for mobile */
+    }
+
+    .party-member p {
+        font-size: 0.9rem; /* Adjust font size for mobile */
+    }
+}

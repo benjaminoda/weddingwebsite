@@ -1,0 +1,78 @@
+/* Hero section styles */
+.hero-about {
+    position: relative;
+    background: url('https://lh3.googleusercontent.com/d/17FJdVDP3Us3bed8tZlhSTSphD2ByaDPP') no-repeat center center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-family: 'Adobe Garamond Pro', serif;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+/* Story section styles */
+.story-section {
+    padding: 2em 1em;
+}
+
+.story-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.story-section p {
+    font-family: 'Abel', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5em;
+    letter-spacing: 0.01em;
+    margin-bottom: 1em;
+}
+
+.gallery-section {
+    padding: 40px 0;
+}
+
+.gallery-section .container {
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.gallery-item {
+    flex-grow: 1;
+    margin: 0;
+}
+
+.gallery img {
+    height: 200px;
+    max-width: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
