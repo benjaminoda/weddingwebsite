@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="sharedstyles.css">
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abel&family=Adobe+Garamond+Pro&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css">
 </head>
 <body>
     <header>
@@ -55,32 +56,46 @@
         <section class="gallery-section">
             <div class="container">
                 <div class="gallery" id="gallery">
-                    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/d/1jvTO9Z72gtSf7sSY929XN76byu8p0Kt8" alt="Image 1"></div>
-                    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/d/1cwZy8cuzPKFKRaGxkhgMPJc-bq0Y9jFn" alt="Image 2"></div>
-                    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/d/174ZXiQhWzTiAlK795RmNTID8d-8U4DYT" alt="Image 3"></div>
-                    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/d/1ysQ3PfTFZNNxVNO6bNkMKH5WUIPN6rXd" alt="Image 4"></div>
-                    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/d/11L-_zym9P3u1N_jYsIuKlXj4dFmv9_iA" alt="Image 5"></div>
-                    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/d/11kX4mAyez2bUxYYWuQZz7Utx_6URw3uv" alt="Image 6"></div>
-                    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/d/13zgQ-dSp8K6XlN5i81vobK0ersiyEP_4" alt="Image 7"></div>
-                    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/d/18rjPkaCwNmnJuKOkBF8UONLVI8LhlS7P" alt="Image 8"></div>
-                    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/d/1B2tqvcuRNs0zxlWpKUZbiJGttpAWhjvY" alt="Image 9"></div>
-                    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/d/1GOR2SdyR8C1a8DLT_PPUqS9nQ3kkajve" alt="Image 10"></div>
-                    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/d/1XBlVXypoaaMq1tdtxd4s2O0qsYdu_4Q2" alt="Image 11"></div>
-                    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/d/1c4khi6ctwIM2tJF422OyAE9c-QaqzjLy" alt="Image 12"></div>
-                    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/d/1emKX4IUhtCl_j2OxtsiRIy4SJd2XYrqF" alt="Image 13"></div>
-                    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/d/1k16JXZUeo9jzTZ3zOykwePSIfQJfq4rC" alt="Image 14"></div>
-                    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/d/1kMt7fIhaRXUv8p4V6witx8QafzpLh6X6" alt="Image 15"></div>
-                    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/d/1niK61Dor4IVJ3bucG0tP6kRg_u7X0UmQ" alt="Image 16"></div>
-                    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/d/1p23rRsd3B8vCXTrBTIKmwsd1xEamgSMB" alt="Image 17"></div>
-                    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/d/1p6Bp9ly0l-o7M51trFGoG_IySV2xoUsZ" alt="Image 18"></div>
-                    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/d/1qZGKKS5UKzHp5pfeiExiiQDKwzJl2kob" alt="Image 19"></div>
-                    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/d/1qi2Fbj0P4DGcjJFMSHb5HU-Lje90Mj_b" alt="Image 20"></div>
-                    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/d/1to36DUSQuPwZLasK6sYEe2Fxq6Wyah8p" alt="Image 21"></div>
-                    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/d/1ytc37ry602LKCK766hUU3HRNEePxVF8Q" alt="Image 22"></div>
+                    <div class="gallery-item" data-src="https://lh3.googleusercontent.com/d/1jvTO9Z72gtSf7sSY929XN76byu8p0Kt8"><img src="https://lh3.googleusercontent.com/d/1jvTO9Z72gtSf7sSY929XN76byu8p0Kt8" alt="Image 1"></div>
+                    <div class="gallery-item" data-src="https://lh3.googleusercontent.com/d/1cwZy8cuzPKFKRaGxkhgMPJc-bq0Y9jFn"><img src="https://lh3.googleusercontent.com/d/1cwZy8cuzPKFKRaGxkhgMPJc-bq0Y9jFn" alt="Image 2"></div>
+                    <div class="gallery-item" data-src="https://lh3.googleusercontent.com/d/174ZXiQhWzTiAlK795RmNTID8d-8U4DYT"><img src="https://lh3.googleusercontent.com/d/174ZXiQhWzTiAlK795RmNTID8d-8U4DYT" alt="Image 3"></div>
+                    <div class="gallery-item" data-src="https://lh3.googleusercontent.com/d/1ysQ3PfTFZNNxVNO6bNkMKH5WUIPN6rXd"><img src="https://lh3.googleusercontent.com/d/1ysQ3PfTFZNNxVNO6bNkMKH5WUIPN6rXd" alt="Image 4"></div>
+                    <div class="gallery-item" data-src="https://lh3.googleusercontent.com/d/11L-_zym9P3u1N_jYsIuKlXj4dFmv9_iA"><img src="https://lh3.googleusercontent.com/d/11L-_zym9P3u1N_jYsIuKlXj4dFmv9_iA" alt="Image 5"></div>
+                    <div class="gallery-item" data-src="https://lh3.googleusercontent.com/d/11kX4mAyez2bUxYYWuQZz7Utx_6URw3uv"><img src="https://lh3.googleusercontent.com/d/11kX4mAyez2bUxYYWuQZz7Utx_6URw3uv" alt="Image 6"></div>
+                    <div class="gallery-item" data-src="https://lh3.googleusercontent.com/d/13zgQ-dSp8K6XlN5i81vobK0ersiyEP_4"><img src="https://lh3.googleusercontent.com/d/13zgQ-dSp8K6XlN5i81vobK0ersiyEP_4" alt="Image 7"></div>
+                    <div class="gallery-item" data-src="https://lh3.googleusercontent.com/d/18rjPkaCwNmnJuKOkBF8UONLVI8LhlS7P"><img src="https://lh3.googleusercontent.com/d/18rjPkaCwNmnJuKOkBF8UONLVI8LhlS7P" alt="Image 8"></div>
+                    <div class="gallery-item" data-src="https://lh3.googleusercontent.com/d/1B2tqvcuRNs0zxlWpKUZbiJGttpAWhjvY"><img src="https://lh3.googleusercontent.com/d/1B2tqvcuRNs0zxlWpKUZbiJGttpAWhjvY" alt="Image 9"></div>
+                    <div class="gallery-item" data-src="https://lh3.googleusercontent.com/d/1GOR2SdyR8C1a8DLT_PPUqS9nQ3kkajve"><img src="https://lh3.googleusercontent.com/d/1GOR2SdyR8C1a8DLT_PPUqS9nQ3kkajve" alt="Image 10"></div>
+                    <div class="gallery-item" data-src="https://lh3.googleusercontent.com/d/1XBlVXypoaaMq1tdtxd4s2O0qsYdu_4Q2"><img src="https://lh3.googleusercontent.com/d/1XBlVXypoaaMq1tdtxd4s2O0qsYdu_4Q2" alt="Image 11"></div>
+                    <div class="gallery-item" data-src="https://lh3.googleusercontent.com/d/1c4khi6ctwIM2tJF422OyAE9c-QaqzjLy"><img src="https://lh3.googleusercontent.com/d/1c4khi6ctwIM2tJF422OyAE9c-QaqzjLy" alt="Image 12"></div>
+                    <div class="gallery-item" data-src="https://lh3.googleusercontent.com/d/1emKX4IUhtCl_j2OxtsiRIy4SJd2XYrqF"><img src="https://lh3.googleusercontent.com/d/1emKX4IUhtCl_j2OxtsiRIy4SJd2XYrqF" alt="Image 13"></div>
+                    <div class="gallery-item" data-src="https://lh3.googleusercontent.com/d/1k16JXZUeo9jzTZ3zOykwePSIfQJfq4rC"><img src="https://lh3.googleusercontent.com/d/1k16JXZUeo9jzTZ3zOykwePSIfQJfq4rC" alt="Image 14"></div>
+                    <div class="gallery-item" data-src="https://lh3.googleusercontent.com/d/1kMt7fIhaRXUv8p4V6witx8QafzpLh6X6"><img src="https://lh3.googleusercontent.com/d/1kMt7fIhaRXUv8p4V6witx8QafzpLh6X6" alt="Image 15"></div>
+                    <div class="gallery-item" data-src="https://lh3.googleusercontent.com/d/1niK61Dor4IVJ3bucG0tP6kRg_u7X0UmQ"><img src="https://lh3.googleusercontent.com/d/1niK61Dor4IVJ3bucG0tP6kRg_u7X0UmQ" alt="Image 16"></div>
+                    <div class="gallery-item" data-src="https://lh3.googleusercontent.com/d/1p23rRsd3B8vCXTrBTIKmwsd1xEamgSMB"><img src="https://lh3.googleusercontent.com/d/1p23rRsd3B8vCXTrBTIKmwsd1xEamgSMB" alt="Image 17"></div>
+                    <div class="gallery-item" data-src="https://lh3.googleusercontent.com/d/1p6Bp9ly0l-o7M51trFGoG_IySV2xoUsZ"><img src="https://lh3.googleusercontent.com/d/1p6Bp9ly0l-o7M51trFGoG_IySV2xoUsZ" alt="Image 18"></div>
+                    <div class="gallery-item" data-src="https://lh3.googleusercontent.com/d/1qZGKKS5UKzHp5pfeiExiiQDKwzJl2kob"><img src="https://lh3.googleusercontent.com/d/1qZGKKS5UKzHp5pfeiExiiQDKwzJl2kob" alt="Image 19"></div>
+                    <div class="gallery-item" data-src="https://lh3.googleusercontent.com/d/1qi2Fbj0P4DGcjJFMSHb5HU-Lje90Mj_b"><img src="https://lh3.googleusercontent.com/d/1qi2Fbj0P4DGcjJFMSHb5HU-Lje90Mj_b" alt="Image 20"></div>
+                    <div class="gallery-item" data-src="https://lh3.googleusercontent.com/d/1to36DUSQuPwZLasK6sYEe2Fxq6Wyah8p"><img src="https://lh3.googleusercontent.com/d/1to36DUSQuPwZLasK6sYEe2Fxq6Wyah8p" alt="Image 21"></div>
+                    <div class="gallery-item" data-src="https://lh3.googleusercontent.com/d/1ytc37ry602LKCK766hUU3HRNEePxVF8Q"><img src="https://lh3.googleusercontent.com/d/1ytc37ry602LKCK766hUU3HRNEePxVF8Q" alt="Image 22"></div>
                 </div>
             </div>
         </section>
     </main>
     <script src="menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            lightGallery(document.getElementById('gallery'), {
+                selector: '.gallery-item',
+                plugins: [lgThumbnail, lgZoom],
+                speed: 500,
+                thumbnail: true,
+                download: false
+            });
+        });
+    </script>
 </body>
 </html>

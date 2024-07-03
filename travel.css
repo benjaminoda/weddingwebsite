@@ -1,14 +1,8 @@
-nav ul li a {
-
-    color: #000;
-}
-
 /* Hero section styles */
 .hero-travel {
     background: #ede8e8;
     padding: 2em 0; /* Adjust this value to create space between the header and the travel info section */
 }
-
 
 /* Travel Information section styles */
 .travel-info-section {
@@ -25,18 +19,22 @@ nav ul li a {
 
 .travel-info-container {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column; /* Change to column direction */
+    align-items: center;
 }
 
 .map-column {
-    flex: 1 1 50%;
-    margin-right: 2em;
+    width: 100%;
+    margin-bottom: 2em; /* Add margin for spacing */
+    display: flex;
+    flex-direction: column; /* Change to column direction */
+    align-items: center;
 }
 
 .info-column {
-    flex: 1 1 50%;
+    width: 100%;
     text-align: left;
+    max-width: 800px; /* Add max-width for better readability */
 }
 
 .info-column h2 {
@@ -64,18 +62,6 @@ nav ul li a {
 
 /* Media Query for Mobile Devices */
 @media (max-width: 750px) {
-    .travel-info-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .map-column,
-    .info-column {
-        flex: 1 1 100%;
-        margin-right: 0;
-        max-width: 90%; /* Adjust this value to provide space around the columns */
-    }
-
     .map-column iframe {
         width: 100%;
         height: 100%;

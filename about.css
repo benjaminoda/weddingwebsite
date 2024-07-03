@@ -66,7 +66,12 @@
 
 .gallery-item {
     flex-grow: 1;
-    margin: 0;
+    margin: 4px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
 }
 
 .gallery img {
@@ -75,4 +80,29 @@
     min-width: 100%;
     object-fit: cover;
     vertical-align: bottom;
+}
+
+/* Media Query for Desktop and Above */
+@media (min-width: 750px) {
+    .gallery-item {
+        cursor: pointer;
+    }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 750px) {
+    .gallery {
+        display: block;
+    }
+
+    .gallery-item {
+        margin-bottom: 16px;
+        width: 100%;
+    }
+
+    .gallery img {
+        height: auto;
+        width: 100%;
+        object-fit: contain;
+    }
 }

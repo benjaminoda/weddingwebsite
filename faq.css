@@ -1,7 +1,6 @@
-
-
 /* Hero section styles */
 .hero-faq {
+    position: relative; /* Add this line */
     background: url('https://lh3.googleusercontent.com/d/1oD9kqiP-wAL7RIRLOn7UMl6bk0q8ZQz5') no-repeat center center;
     background-size: cover;
     height: 800px;
@@ -19,7 +18,7 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.25); /* Adjust opacity here */
-    z-index: 1; /* Ensure the overlay is above background but not hero content */;
+    z-index: 1; /* Ensure the overlay is above background but not hero content */
 }
 
 .hero-content {
@@ -31,8 +30,6 @@
     text-align: center;
     z-index: 3;
 }
-
-
 
 .hero-faq h1 {
     font-family: 'Adobe Garamond Pro', serif;
@@ -77,4 +74,15 @@
 .faq-section ol li a {
     color: #000;
     text-decoration: underline;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 750px) {
+    .faq-section h2 {
+        font-size: 1.5rem; /* Adjust font size for mobile */
+    }
+
+    .faq-section ol {
+        font-size: 1rem; /* Adjust font size for mobile */
+    }
 }
